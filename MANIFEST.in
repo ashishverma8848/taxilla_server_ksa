@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include taxilla_server_ksa *.css
+recursive-include taxilla_server_ksa *.csv
+recursive-include taxilla_server_ksa *.html
+recursive-include taxilla_server_ksa *.ico
+recursive-include taxilla_server_ksa *.js
+recursive-include taxilla_server_ksa *.json
+recursive-include taxilla_server_ksa *.md
+recursive-include taxilla_server_ksa *.png
+recursive-include taxilla_server_ksa *.py
+recursive-include taxilla_server_ksa *.svg
+recursive-include taxilla_server_ksa *.txt
+recursive-exclude taxilla_server_ksa *.pyc
