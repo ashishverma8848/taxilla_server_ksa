@@ -81,11 +81,12 @@ def response_logger(payload,response,api,doc_type,doc_name,status="Failed"):
 
 class DictObj:
     def __init__(self, in_dict:dict):
-        for key, val in in_dict.items():
-            if isinstance(val, (list, tuple)):
-               setattr(self, key, [DictObj(x) if isinstance(x, dict) else x for x in val])
-            else:
-               setattr(self, key, DictObj(val) if isinstance(val, dict) else val)
+        pass
+        # for key, val in in_dict.items():
+        #     if isinstance(val, (list, tuple)):
+        #        setattr(self, key, [DictObj(x) if isinstance(x, dict) else x for x in val])
+        #     else:
+        #        setattr(self, key, DictObj(val) if isinstance(val, dict) else val)
                
 
 def to_dict_obj(raw_dict):
